@@ -3,14 +3,25 @@
 // }
 
 #navbar {
-  background: $light-blue-lazio;
+  background: $blue-lazio;
+  #logo-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 80px;
+      height: 50px;
+    }
+  }
   ul {
     li {
       a {
-        color: #3D7F99;
+        color: $white;
         &.active {
-          background: $blue-lazio;
-          color: $white;
+          background: $light-blue-lazio;
+          color: #3D7F99;
         }
       }
     }
@@ -19,6 +30,10 @@
 
 .main-container {
   min-height: 50vh;
+}
+
+#home-container {
+  padding-top: 0px !important;
 }
 
 #footer {

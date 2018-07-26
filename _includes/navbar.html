@@ -1,7 +1,13 @@
 {% assign pages = site.pages | sort: 'order' %}
 <nav id="navbar" class="navbar-fixed" role="navigation">
   <div class="nav-wrapper container">
-    <a id="logo-container" href="#" class="brand-logo right">The Laziale</a>
+    <a id="logo-container" href="/" class="brand-logo right">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/SS_Lazio.svg/1200px-SS_Lazio.svg.png"
+        width="80"
+        height="50"
+      >
+    </a>
     <ul class="left hide-on-med-and-down">
       {% for p in pages %}
         {% if p.title %}
