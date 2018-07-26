@@ -1,0 +1,46 @@
+{% assign pages = site.pages | sort: 'order' %}
+<nav id="navbar" class="navbar-fixed" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="#" class="brand-logo right">The Laziale</a>
+    <ul class="left hide-on-med-and-down">
+      {% for p in pages %}
+        {% if p.title %}
+          <li>
+            <a {% if p.url == page.url %}class='active'{% endif %} href='{{ p.url }}'>
+              {{ p.title }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <ul id="nav-mobile" class="sidenav">
+      {% for p in pages %}
+        {% if p.title %}
+          <li>
+            <a  {% if p.url == page.url %}class='active'{% endif %} href='{{ p.url }}'>
+              {{ p.title }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+      <i class="material-icons">menu</i>
+    </a>
+  </div>
+</nav>
+<!-- 
+<div class="sidebar" id="sidebar">
+    <ul class="list-unstyled">
+     {% assign pages = site.pages | sort:'menu-order' %}
+      {% for p in pages %}
+      	{% if p.menu-order %}
+            <li>
+              <a  {% if p.url == page.url %}class='active'{% endif %} href='{{ p.url }}'>
+                {{ p.title }}
+              </a>
+            </li>
+         {% endif %}
+       {% endfor %}
+    </ul>
+</div> -->

@@ -1,0 +1,26 @@
+// h1, h2, h3, h4 {
+//   color: $gold-lazio;
+// }
+
+#navbar {
+  background: $light-blue-lazio;
+  ul {
+    li {
+      a {
+        color: #3D7F99;
+        &.active {
+          background: $blue-lazio;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.main-container {
+  min-height: 50vh;
+}
+
+#footer {
+  background: $blue-lazio;
+}

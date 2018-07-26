@@ -1,0 +1,28 @@
+.hr-big {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#video-container {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#card-section {
+  background: $gold-lazio;
+}
+
+#quote-container {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  blockquote {
+    border-color: $light-blue-lazio;
+    font-size: 20px;
+    font-style: oblique;
+  }
+}
